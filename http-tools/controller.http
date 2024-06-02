@@ -1,0 +1,13 @@
+### Health Check
+GET http://localhost:8080/actuator/health
+Authorization: {{auth_token}}
+
+### Test database connection
+GET http://localhost:8080/api/test
+Authorization: {{auth_token}}
+
+### Get all users
+GET http://localhost:8080/api/users
+Authorization: {{auth_token}}
+
+### echo -n 'user:f108e5c8-88f7-45a7-9709-5579584fa094' | base64
